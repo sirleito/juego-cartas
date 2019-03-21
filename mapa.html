@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+<style>
+
+body {
+	margin: 0;
+}
+.mapa {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+}
+.pais {
+	width: 50%;
+	height: 50%;
+	background-color: blue;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.pais2 {
+	background-color: red;
+}
+.pais3 {
+	background-color: brown;
+}
+.pais4 {
+	background-color: green;
+}
+
+</style>
+
+<div class="mapa" id="mapa">
+	
+	<div data-link="uno" class="pais pais1">
+		<h2>País Uno</h2>
+	</div>
+	<div data-link="dos" class="pais pais2">
+		<h2>País Dos</h2>
+	</div>
+	<div data-link="tres" class="pais pais3">
+		<h2>País Tres</h2>
+	</div>
+	<div data-link="cuatro" class="pais pais4">
+		<h2>País Cuatro</h2>
+	</div>
+
+</div>
+
+</body>
+</html>

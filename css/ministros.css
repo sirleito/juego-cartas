@@ -1,0 +1,26 @@
+/*
+	MINISTROS
+*/
+
+/*
+Contenedor
+*/
+
+.contenedorMinistros section{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.caraMinistro{
+	width: 100%;
+}
+
+.caraMinistro img{
+	width: 100%;
+}
+
+.cartaMinistros{
+	width: 200px;
+	box-shadow: 1px 1px 3px black;
+	border-radius: 10px;
+}

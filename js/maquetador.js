@@ -3,15 +3,15 @@
 
 		let fragmento = document.createDocumentFragment()
 
-		items.forEach(function(a){
-
+		items.forEach(function(a, b){
 			let div = creador("div", "contenedor")
 
 			div.appendChild(creador("h2", "titulo-carta", a.titulo))
 			div.appendChild(creador("p", "texto-carta", a.mensaje))
-			div.appendChild(creador("p", "costo-carta", a.costo))
+			div.appendChild(creador("p", "coste-carta", a.coste))
 
-			div.dataset.ejemplo = a.data
+			div.dataset.numero = b
+			div.name = a.name
 			div.addEventListener("click", global.seleccionar)
 			
 			fragmento.appendChild(div)
@@ -31,5 +31,7 @@
 	}
 	
 	global.maquetadorCartas = maquetadorCartas
+
+	global.encuestasBoton.addEventListener("click", encuestas.encuestasFuncion)
 
 })()
