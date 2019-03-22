@@ -11,6 +11,9 @@ Contenedor
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
+.tituloMinistro{
+	width: 100%;
+}
 .caraMinistro{
 	width: 100%;
 }
@@ -23,4 +26,15 @@ Contenedor
 	width: 200px;
 	box-shadow: 1px 1px 3px black;
 	border-radius: 10px;
+}
+
+/*
+BOTON
+*/
+
+.jugar{
+	font-size: 20px;
+	padding: 8px 16px;
+	border-radius: 5px;
+	background-color: #B78BFF;
 }

@@ -4,7 +4,10 @@ function mapaFunc(){
 	mapa.addEventListener("click", iniciar)
 }
 function iniciarFunc(){
-	console.log("hola")
+	document.querySelector("#jugar").addEventListener("click", function(){
+		peticion("pantalla.html", pantallaFunc)
+	})
+	console.log("cheeeeeeeeeeeeeeeeeeeeeeeeeeee")
 }
 function peticion(url, func){
 	let ajax = new XMLHttpRequest()
@@ -26,5 +29,27 @@ function iniciar(e){
 	console.log(e.target.dataset.link)
 }
 // global.maquetarMapas = maquetarMapas
+
+
+function pantallaFunc(){
+	document.querySelector("#poblacion p").innerHTML = estadisticas.totalPoblacion
+	function ciclo(dato, cont){
+		console.log(dato)
+		let frag = document.createDocumentFragment()
+		for(data in dato){
+			let pe = document.createElement("p")
+			pe.textContent = data + ": " + dato[data]
+			frag.appendChild(pe)
+		}
+		document.querySelector(cont).appendChild(frag)
+	}
+	ciclo(estadisticas.ideologiaAtomos, "#ideologiaAtomos")
+	ciclo(estadisticas.statusSocialAtomos, "#statusSocialAtomos")
+	ciclo(estadisticas.cultura, "#cultura")
+	// document.querySelector("#ideologiaAtomos p").innerHTML = estadisticas.ideologiaAtomos
+	// document.querySelector("#statusSocialAtomos p").innerHTML = estadisticas.statusSocialAtomos
+	// document.querySelector("#cultura p").innerHTML = estadisticas.cultura
+}
+
 
 })()
