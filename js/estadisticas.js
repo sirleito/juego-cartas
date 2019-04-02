@@ -15,13 +15,14 @@ let estadisticas = {
 		ricos: 0
 	},
 	cultura: {},
-	porcentaje: (arg, arg2)=>{
-		console.log(estadisticas[arg][arg2], estadisticas.totalPoblacion )
-		return ((estadisticas[arg][arg2] * 100) / estadisticas.totalPoblacion).toFixed(2)
-	},
-	ideExtIzq: ()=>{ return ((estadisticas.ideologiaAtomos.extIzq * 100) / estadisticas.totalPoblacion).toFixed(2)},
-	ideIzq: ()=>{ return ((estadisticas.ideologiaAtomos.izq * 100) / estadisticas.totalPoblacion).toFixed(2)},
-	ideCentro: ()=>{ return ((estadisticas.ideologiaAtomos.centro * 100) / estadisticas.totalPoblacion).toFixed(2)},
-	ideDer: ()=>{ return ((estadisticas.ideologiaAtomos.der * 100) / estadisticas.totalPoblacion).toFixed(2)},
-	ideExtDer: ()=>{ return ((estadisticas.ideologiaAtomos.extDer * 100) / estadisticas.totalPoblacion).toFixed(2)},
+	// porcentaje: (arg, arg2)=>{
+	// 	console.log(estadisticas[arg][arg2], estadisticas.totalPoblacion )
+	// 	return ((estadisticas[arg][arg2] * 100) / estadisticas.totalPoblacion).toFixed(2)
+	// },
+	// ideExtIzq: ()=>{ return ((estadisticas.ideologiaAtomos.extIzq * 100) / estadisticas.totalPoblacion).toFixed(2)},
+	// ideIzq: ()=>{ return ((estadisticas.ideologiaAtomos.izq * 100) / estadisticas.totalPoblacion).toFixed(2)},
+	// ideCentro: ()=>{ return ((estadisticas.ideologiaAtomos.centro * 100) / estadisticas.totalPoblacion).toFixed(2)},
+	// ideDer: ()=>{ return ((estadisticas.ideologiaAtomos.der * 100) / estadisticas.totalPoblacion).toFixed(2)},
+	// ideExtDer: ()=>{ return ((estadisticas.ideologiaAtomos.extDer * 100) / estadisticas.totalPoblacion).toFixed(2)},
+	porcentajeFunc: (a, b)=> { return ((a * 100) / b).toFixed(2)}
 }

@@ -19,18 +19,25 @@
 		global.mano.appendChild(fragmento)
 	}
 
-	function creador(tipo, clase, contenido, data){
+	function creador(tipo, clase, texto, contenido, attr, attrValue, data){
 
 		let elemento = document.createElement(tipo)
 
 		clase && elemento.classList.add(clase)
 
-		contenido && (elemento.textContent = contenido)
+		texto && (elemento.textContent = texto)
+
+		contenido && (elemento.innerHTML = contenido);
+
+		(attr && attrValue) && (elemento.setAttribute(attr, attrValue))
+
+		data && (elemento.dataset.dataCustom = data)
 
 		return elemento
 	}
 	
 	global.maquetadorCartas = maquetadorCartas
+	global.creador = creador
 
 	global.encuestasBoton.addEventListener("click", encuestas.encuestasFuncion)
 

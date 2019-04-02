@@ -71,13 +71,3 @@ body{
 .propuesta{
 	width: 73%;
 }
-.todosLosMinistros{
-	display: flex;
-	justify-content: center;
-}
-.todosLosMinistros div{
-	width: 130px;
-}
-.todosLosMinistros div img{
-	width: 100%;
-}

@@ -38,3 +38,18 @@ BOTON
 	border-radius: 5px;
 	background-color: #B78BFF;
 }
+
+
+.todosLosMinistros{
+	display: flex;
+	justify-content: center;
+}
+.todosLosMinistros div{
+	width: 130px;
+}
+.todosLosMinistros div img{
+	width: 100%;
+}
+section .cartaSeleccionada{
+	background-color: red;
+}
